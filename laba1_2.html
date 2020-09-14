@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Laba1</title>
+</head>
+<body>
+        <div>
+        <input type="text" id = "text_n" value = "">
+        
+        <button onclick="createDiv()">Create div</button>
+        <script>
+            function createDiv(){
+                let x = document.getElementById("text_n").value;
+                let d=document.createElement('div');
+                d.style.width='300px';
+                d.style.height='200px';
+                d.style.background='blue';
+                document.body.appendChild(d);
+                d.innerHTML = "<h1>"+ x +"</h1>"; 
+            }
+        </script>
+        </div>
+</body>
